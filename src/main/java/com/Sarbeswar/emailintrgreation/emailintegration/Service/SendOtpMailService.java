@@ -35,7 +35,7 @@ public class SendOtpMailService{
 		MimeMessageHelper mimemessageHelper = new MimeMessageHelper(mineMessage);
 		mimemessageHelper.setTo(email);
 		mimemessageHelper.setSubject("OTP");
-		mimemessageHelper.setText("Your Otp is:" + otp);
+		mimemessageHelper.setText("Your Otp is: " + otp);
 		javaMailSender.send(mineMessage);
 		
 	}
